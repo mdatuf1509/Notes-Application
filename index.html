@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form-box">
+        <h2>Add New Call</h2>
+
+        <label for="profile-img">Profile Image Link</label>
+        <input autocomplete="off" required type="text" id="profile-img" name="profile-img" placeholder="https://..." />
+
+        <label for="name">Name</label>
+        <input autocomplete="off" required type="text" id="name" name="name" placeholder="Enter full name" />
+
+        <label for="town">Home Town</label>
+        <input autocomplete="off" required type="text" id="town" name="town" placeholder="e.g. Patna" />
+
+        <label for="purpose">Purpose</label>
+        <input autocomplete="off" required type="text" id="purpose" name="purpose"
+            placeholder="e.g. Discuss portfolio, share feedback" />
+
+        <label>Call Requirement</label>
+        <div class="radio-group">
+            <div class="radio-option">
+                <input required type="radio" id="Emergencey" name="requirement" />
+                <label for="urgent">Emergencey</label>
+            </div>
+            <div class="radio-option">
+                <input required type="radio" id="Important" name="requirement" />
+                <label for="schedule">Important</label>
+            </div>
+            <div class="radio-option">
+                <input required type="radio" id="Urgent" name="requirement" />
+                <label for="casual">Urgent</label>
+            </div>
+            <div class="radio-option">
+                <input required type="radio" id="No Rush" name="requirement" />
+                <label for="followup">No Rush</label>
+            </div>
+        </div>
+
+        <div class="form-buttons">
+            <button class="submit-btn" type="submit">Submit</button>
+            <button class="close-btn" type="button">Close</button>
+        </div>
+    </form>
+    <div class="main">
+        <div class="Left-item">
+            <div class="nav-buttons">
+                <button class="add">+</button>
+                <button class="upbtn">↑</button>
+                <button class="dnbtn">↓</button>
+            </div>
+        </div>
+
+        <div class="stack">
+            <div class="card-wrapper">
+                <div class="profile-pic">
+                    <img src="https://i.pinimg.com/736x/97/d6/af/97d6af84a125aeba8e7ed68817d13e39.jpg"
+                        alt="profile-Photo">
+                </div>
+                <div class="info-section">
+                    <h2>Mr. John Doe</h2>
+                    <p>Home Town: Maleshiya</p>
+                    <p>Purpose: Develop webite with your help.</p>
+                    <div class="action-buttons">
+                        <button class="call">Call</button>
+                        <button class="message">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right item">
+            <div class="color-palette">
+                <div class="swatch black"></div>
+                <div class="swatch purple"></div>
+                <div class="swatch brown"></div>
+                <div class="swatch teal"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
